@@ -13,7 +13,7 @@ public class LoginScreen {
     private AndroidElement txtUsername;
     @AndroidFindBy(xpath = "//android.widget.EditText[2]")
     private MobileElement txtPassword;
-    @AndroidFindBy(xpath = "//*[@text='Start Swagging']")
+    @AndroidFindBy(xpath = "//*[@class='android.view.ViewGroup' and ./*[@text='Start Swagging']]")
     private MobileElement btnLogin;
 
     private AndroidDriver androidDriver;
@@ -32,6 +32,7 @@ public class LoginScreen {
     }
 
     public void clickLogin() {
+        androidDriver.hideKeyboard();
         btnLogin.click();
     }
 }

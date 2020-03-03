@@ -1,3 +1,4 @@
 tests\LoginTest.class
 screens\LoginScreen.class
-tests\SwaggrightBase.class
+screens\WelcomeScreen.class
+utils\SwaggrightBase.class

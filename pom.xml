@@ -21,6 +21,7 @@
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
             <version>7.1.0</version>
+            <scope>test</scope>
         </dependency>
         <!-- https://mvnrepository.com/artifact/io.appium/java-client -->
         <dependency>
@@ -86,7 +87,6 @@
                         </execution>
                     </executions>
                 </plugin>
-
         </plugins>
     </build>
 </project>
